@@ -11,4 +11,11 @@
 ・少量のデータ保存に、共有プリファレンスが利用できる。データベースを利用した保存方法は本書最後のアプリで解説される。  
 ・Androidの基本動作の流れであるActivityのライフサイクルについて理解。言葉より図の方がイメージしやすいのでメモ。
 <img src="https://developer.android.com/images/activity_lifecycle.png" width="320px">  
-※ https://developer.android.com/reference/android/app/Activity#ActivityLifecycle
+※ https://developer.android.com/reference/android/app/Activity#ActivityLifecycle  
+今回はActivityが二つ。MainとResult。  
+Result側で、onDestroy()としてfinish()が呼ばれている。リファレンス参照。  
+以下に全体の流れをメモとして記述  
+MainActivity： onCreate ==> startActivity(Result) ==> ResultActivityへ  
+ResultActivity: onCreate ==> finish() ==> MainActivityへ  
+
+つまりMainActivityはonStopもonDestroyもされず起動したままの様子。
