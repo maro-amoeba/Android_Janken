@@ -4,7 +4,9 @@
 <img src="https://user-images.githubusercontent.com/37995730/49918147-62010500-fee5-11e8-877c-c2fe6726649f.png" width="320px"> <img src="https://user-images.githubusercontent.com/37995730/49918151-662d2280-fee5-11e8-8201-1cb8b5b52272.png" width="320px">
 
 
-## 学習したことメモ
+## 学習メモ  
+●画面推移についての理解を進めた。  
+
 ・Activityの推移にIntentを利用。  
 ・制作の流れは「Layout」 --> 「Activity」。　Unityの様な流れ、画面に空のオブジェクトをID振って置いてゆくイメージ。   
 ・Kotlinはスッキリしてて良さげ。  
